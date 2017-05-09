@@ -1,0 +1,50 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-新闻资讯</block>
+<block name="css_js">
+</block>
+<block name="content">
+<div class="container" style="margin-top:10px;">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				<span class="glyphicon glyphicon-th-list"></span> 新闻资讯
+			</h4>
+			<p>{:C('OURHISTORY')}</p>
+		</div>
+	</div>
+	<!-- 新闻资讯 -->
+	<div class="container">
+		<div class="row news">
+			<volist name="news" id="one">
+				<div class="col-md-6">
+					<div class="media">
+						<div class="media-left media-middle">
+							<a href="{:U('OurHistory/info')}/id/{$one[id]}"><img src="{:C('UPLOADS')}{$one[img]}" alt="" width="200px" height="130px"></a>	
+						</div>
+						<div class="media-body"><h4><a href="{:U('OurHistory/info')}/id/{$one[id]}">{$one[title]}</a></h4><p><a href="{:U('OurHistory/info')}/id/{$one[id]}">{$one[brief_info]}...[详细信息]</a></p><p style="text-align:right;margin-right:0px;">{$one[news_date]|substr=0,10}</p></div>
+					</div>
+				</div>
+			</volist>
+		</div>
+	</div>
+	<div class="text-center">
+		{$pagination}
+	</div>
+</div>
+<script>
+	$('.product').hover(
+		function(){
+			$(this).children('div').stop().slideDown(1000);
+		},
+		function(){
+			$(this).children('div').stop().slideUp(1000);
+		}
+	);
+	$('.production_title>li').click(function(){
+		$('.production_title>li').removeClass('production_title');
+		$(this).addClass('production_active');
+	})
+
+</script>
+</block>
+

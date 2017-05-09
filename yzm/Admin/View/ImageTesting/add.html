@@ -1,0 +1,42 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增图片</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+	<script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+	<script src="__PUBLIC__/js/common.js"></script>
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>新增图片</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="" enctype="multipart/form-data" method="post">
+			<div class="form-group">
+				<label>图片名称</label>
+				<input type="text" name="name" tabindex="1" class="form-control">
+			</div>
+			<div class="form-group">
+			    <label>图片上传</label>
+			    <div class="col-sm-12">
+			        <div class="row">
+			            <input type="file" id="filepath_tmp" class="form-control" multiple="true">
+			            <input type="hidden" name="filepath" value="{$row[filepath]}">
+			        </div>
+			        <div class="row">
+			            <div class="col-sm-12 filepath_preview"></div>
+			        </div>
+			    </div>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+<script>
+	initUploadify('filepath_tmp', 'filepath_preview', 'filepath', 'water', 'ClickMe!', '__PUBLIC__/uploadify/uploadify.swf', '{:U("Allow/upload")}', '{:C("UPLOADS")}');
+</script>
+</block>
+

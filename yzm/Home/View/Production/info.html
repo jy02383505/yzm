@@ -1,0 +1,19 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-学员作品详情</block>
+<block name="css_js">
+</block>
+<block name="carousel"></block>
+<block name="content">
+<div class="container" style="margin-top:10px;">
+	<div class="row production">
+		<volist name="rows" id="row">
+			<div class="col-md-4 product" style="height:200px;">
+				<a>
+					<img class="img-thumbnail img-responsive img-rounded" width="100%" src="{:C('UPLOADS')}{$row}" alt="">
+				</a>
+			</div>
+		</volist>
+	</div>
+</div>
+</block>
+

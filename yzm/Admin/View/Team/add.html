@@ -1,0 +1,54 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">师资新增</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+	<script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+	<style>
+		textarea{resize: none;}
+	</style>
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>师资新增</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="" enctype="multipart/form-data" method="post">
+			<div class="form-group">
+				<label>教师名称</label>
+				<input type="text" name="name" tabindex="1" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>教师介绍</label>
+				<textarea name="info" tabindex="2" cols="30" rows="10" class="form-control"></textarea>
+			</div>
+			<div class="form-group">
+				<label>教师头像</label>
+				<div id="imgs"></div>
+				<input type="file" name="file_upload" id="file_upload" multiple="true" tabindex="3">
+				<input type="hidden" name="portrait" id="img">
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+<script>
+	// uploadify
+	img = '';
+	$('#file_upload').uploadify({
+		'swf': '__PUBLIC__/uploadify/uploadify.swf',
+		'uploader': '{:U("Allow/upload")}',
+		'buttonText': '缩略图上传',
+		onUploadSuccess: function(file, data, response){
+			img += "<img width='300px' src='/yzm/Uploads/" + data + "'>";
+			$('#imgs').html(img);
+			$('#img').val(data.substr(2));
+		}
+	});
+
+</script>
+</block>
+

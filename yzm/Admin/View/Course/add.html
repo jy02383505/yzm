@@ -1,0 +1,76 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增课程</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+	<script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+	<style>
+		textarea{resize: none;}
+	</style>
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>新增课程</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="" enctype="multipart/form-data" method="post">
+			<div class="form-group">
+				<label>课程名称</label>
+				<input type="text" name="name" tabindex="1" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>课程介绍</label>
+				<textarea name="info" tabindex="2" cols="30" rows="10" class="form-control"></textarea>
+			</div>
+			<input type="hidden" name="path" value="{$_GET[path]?:'0,'}">
+			<div class="form-group">
+				<label>课程种类</label>
+				<select class="form-control" tabindex="3" name="type">
+					<option value="0">线下实训(首页展示)</option>
+					<option value="1">线上教育(首页展示)</option>
+					<option value="2">线下实训(列表展示)</option>
+					<option value="3">线上教育(列表展示)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label>图片上传</label>
+				<div id="imgs"></div>
+				<input type="file" name="img" id="file_upload" multiple="true" tabindex="4">
+				<input type="hidden" name="img" id="img">
+			</div>
+			<div class="form-group">
+				<label>学习内容</label>
+				<input type="text" name="content" tabindex="5" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>学习目标</label>
+				<input type="text" name="target" tabindex="6" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>学习成果</label>
+				<input type="text" name="achievement" tabindex="7" class="form-control">
+			</div>
+			<div class="form-group">
+				<input tabindex="999" type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+<script>
+	// uploadify
+	img = '';
+	$('#file_upload').uploadify({
+		'swf': '__PUBLIC__/uploadify/uploadify.swf',
+		'uploader': '{:U("Allow/upload")}',
+		'buttonText': '缩略图上传',
+		onUploadSuccess: function(file, data, response){
+			img += "<img width='300px' src='/yzm/Uploads/" + data + "'>";
+			$('#imgs').html(img);
+			$('#img').val(data.substr(2));
+		}
+	});
+
+</script>
+</block>
+

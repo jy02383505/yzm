@@ -1,0 +1,37 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增规则</block>
+<block name="style">
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading"><h4>新增规则</h4></div>
+	<div class="panel panel-body">
+		<form action="{:U('add')}" method="post">
+			<div class="form-group">
+				<label>规则</label>
+				<input type="text" name="name" class="form-control" tabindex="1">
+			</div>
+
+			<div class="form-group">
+				<label>规则名称</label>
+				<input type="text" name="title" class="form-control" tabindex="2">
+			</div>
+
+			<div class="form-group">
+				<label>所属模块</label>
+				<select name="module_id" tabindex="3" class="form-control">
+					<volist name="modules" id="module">
+						<option value="{$module[id]}">{$module[name]}</option>
+					</volist>
+				</select>
+			</div>
+
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+</block>
+

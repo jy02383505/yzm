@@ -1,0 +1,68 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-视频下载</block>
+<block name="css_js">
+<link rel="stylesheet" href="__PUBLIC__/css/course.css">
+</block>
+<block name="content">
+<div class="container">
+	<volist name="rows" id="row">
+		<div class="course_block">
+			<div class="course_top">
+				<h4><span>云知梦</span>{$row[date]}年<span>经典视频</span></h4>
+				<p>{$row[info]}</p>
+			</div>
+			<volist name="row[next]" id="download_row" key="k">
+				<div class="course_body">
+					<li>
+						<p class="l">编号<br>{$k}</p>
+						<a class="l">[云知梦{$download_row[date]}年]{$download_row[name]}</a>
+						<div class="clear"></div>
+						<span class="course_body_span">
+							<img src="{:C('UPLOADS')}{$download_row[img]}" alt="" width="530px" height="208px">
+							<ul class="r">
+								<li><b>资源名称：</b>{$download_row[name]}</li>
+								<li><b>资源简介：</b>{$download_row[brief]}</li>
+								<li><b>资源大小：</b>{$download_row[size]}</li>
+								<li>
+									<if condition="$download_row[url]">
+										<a href="{$download_row[url]}" class="btn btn-success" target="_blank">观看</a> 
+									</if>
+									<a href="#modal" data-toggle="modal" class="btn btn-danger" target="_blank">下载</a>
+								</li>
+							</ul>
+							<span class="clear"></span>
+						</span>
+					</li>
+				</div>
+			</volist>
+		</div>
+	</volist>
+</div>
+<div class="modal fade" id="modal" tabindex="0" style="display:none;">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button class="close" data-dismiss="modal">&times;</button>
+				<h4 class="model-title" id="modalLabel">视频下载温馨提示：</h4>
+			</div>
+			<div class="modal-body">
+				<div class="row text-center">
+					<img src="__PUBLIC__/images/qrcode_wx.jpg" alt="云知梦微信二维码" width="300px" class="img-thumbnail">
+				</div>
+				<div class="row">
+					<div class="alert alert-danger">
+						<span>
+							亲，谢谢您对云知梦一如既往的支持，没有大家的信任和鼓励，也就没有云知梦的今天。如想下载云知梦所有高清视频，请先关注云知梦官方微信，轻轻点击菜单【一键下载】即可获取下载地址和密码，再次感谢您的支持，有不妥之处还望见谅，谢谢!
+						</span>
+						<span class="glyphicon glyphicon-download-alt"></span><span class="glyphicon glyphicon-download-alt"></span>
+					</div>
+				</div>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-warning" data-dismiss="modal">关闭</button>
+			</div>
+		</div>
+	</div>
+</div>
+</block>
+

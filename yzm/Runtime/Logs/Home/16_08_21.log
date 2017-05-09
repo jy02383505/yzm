@@ -1,0 +1,469 @@
+[ 2016-08-21T08:56:27+08:00 ] ::1 /yzm/admin.php/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000786s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000870s ]
+SQL: SHOW COLUMNS FROM `carousel` [ RunTime:0.0012s ]
+SQL: SELECT * FROM `carousel` WHERE ( is_display=1 ) ORDER BY order_num desc  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course_plan` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course_plan` ORDER BY course_date desc LIMIT 6   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Home/Controller/IndexController.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `our_history` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `our_history` WHERE ( id!=2 ) ORDER BY news_date desc LIMIT 6   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `course` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `course` WHERE ( type=0 ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `course` WHERE ( type=1 ) LIMIT 6   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `team` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `team` LIMIT 3   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `student` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `student` WHERE ( img != "" ) ORDER BY order_num LIMIT 8   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `course_plan` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `course_plan` WHERE ( 1=1 AND id='6' ) LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `classroom` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `classroom` LIMIT 6   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000086s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 83 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 87 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 114 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 104 行.
+NOTIC: [8] Use of undefined constant course_date - assumed 'course_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 105 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 107 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 112 行.
+NOTIC: [8] Use of undefined constant status - assumed 'status' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 121 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 138 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant title - assumed 'title' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant brief_info - assumed 'brief_info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant news_date - assumed 'news_date' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 140 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 154 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 157 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 158 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 161 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 162 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 165 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 154 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 157 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 158 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 161 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 162 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 165 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 178 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 181 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 182 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 185 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 186 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 189 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 178 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 181 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 182 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 185 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 186 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 189 行.
+NOTIC: [8] Use of undefined constant portrait - assumed 'portrait' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 203 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant portrait - assumed 'portrait' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 203 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant portrait - assumed 'portrait' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 203 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant info - assumed 'info' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 205 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 221 行.
+NOTIC: [8] Use of undefined constant course_name - assumed 'course_name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 223 行.
+NOTIC: [8] Use of undefined constant company - assumed 'company' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 224 行.
+NOTIC: [8] Use of undefined constant position - assumed 'position' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 225 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+NOTIC: [8] Use of undefined constant img - assumed 'img' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 240 行.
+NOTIC: [8] Use of undefined constant name - assumed 'name' /Applications/MAMP/htdocs/yzm/yzm/Runtime/Cache/Home/ac76749adbcef58de916d5e01007b8a8.php 第 241 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040068s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000749s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000806s ]
+
+[ 2016-08-21T09:01:43+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000449s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:01:55+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000462s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:02:08+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000503s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:02:18+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000618s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:03:16+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000512s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:03:40+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:04:08+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000483s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:04:40+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000463s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:04:50+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:05:07+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000451s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:05:39+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000457s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:05:51+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000460s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:06:30+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000410s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000465s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:06:52+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000392s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000441s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:07:28+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000437s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:07:32+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000492s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:07:53+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000470s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:08:05+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000304s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000436s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:08:14+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000610s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:08:22+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000455s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:09:01+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:09:35+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000350s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:09:51+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000362s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000395s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000444s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:10:01+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T09:10:44+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000305s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T10:22:31+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000629s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T10:31:03+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000326s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000445s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-08-21T10:31:10+08:00 ] ::1 /yzm/Public/bs/js/jquery.min.map
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000317s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+ERR: 无法加载控制器:Public
+

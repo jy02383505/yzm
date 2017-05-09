@@ -1,0 +1,32 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增用户</block>
+<block name="style">
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>新增用户</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="{:U('add')}" class="form" method="post">
+			<div class="form-group">
+				<label>用户名</label>
+				<input type="text" name="username" class="form-control" tabindex="1">
+			</div>
+			<div class="form-group">
+				<label>密码</label>
+				<input type="text" name="password" class="form-control" tabindex="2">
+			</div>
+			<div class="form-group">
+				<label><img src="{:U('Login/verify')}" alt="验证码图片"></label>
+				<input placeholder="验证码" type="text" name="fcode" class="form-control" tabindex="3">
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+</block>
+

@@ -1,0 +1,48 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">学生列表</block>
+<block name="css_js">
+	<style>
+		.cImg{width: 150px;}
+	</style>
+</block>
+<block name="content">
+	<div class="panel panel-info">
+		<div class="panel-heading"><h4>学生列表</h4></div>
+		<div class="panel-body">
+			<table class="table table-hover table-striped table-bordered">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th>排序</th>
+					<th>照片</th>
+					<th>所属班级</th>
+					<th>录用公司</th>
+					<th>职位</th>
+					<th>城市</th>
+					<th>添加时间</th>
+					<th>修改时间</th>
+					<th>修改</a></th>
+					<th>删除</a></th>
+				</tr>
+				<volist name="rows" id="row">
+					<tr>
+						<td>{$row[id]}</td>
+						<td>{$row[name]}</td>
+						<td>{$row[order_num]}</td>
+						<td><img class="cImg" src="{:C('UPLOADS')}{$row[img]}" alt="这个可以没有"></td>
+						<td>{$row[course_name]}</td>
+						<td>{$row[company]}</td>
+						<td>{$row[position]}</td>
+						<td>{$row[city]}</td>
+						<td>{$row[create_time]|date="Y-m-d",###}</td>
+						<td>{$row[update_time]|date="Y-m-d",###}</td>
+						<td><a href="{:U('edit')}/id/{$row[id]}">修改</a></td>
+						<td><a href="{:U('delete')}/id/{$row[id]}">删除</a></td>
+					</tr>
+				</volist>
+			</table>
+			<div class="text-center">{$pagination}</div>
+		</div>
+	</div>
+</block>
+

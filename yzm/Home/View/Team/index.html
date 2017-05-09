@@ -1,0 +1,58 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-师资团队</block>
+<block name="css_js">
+</block>
+<block name="content">
+<div class="container" style="margin-top:10px;">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				<span class="glyphicon glyphicon-th-list"></span> 师资团队
+			</h4>
+			<p>{:C('TEAM')}</p>
+		</div>
+	</div>
+	<div class="row team">
+		<volist name="teams" id="team">
+			<div class="col-md-4">
+				<div class="thumbnail text-center teacher">
+					<img src="{:C('UPLOADS')}{$team[portrait]}" class="img-responsive img-circle img-thumbnail" alt="">
+					<div class="caption" style="height:200px;">
+						<h3>{$team[name]}</h3><p>{$team[info]}</p>
+					</div>
+				</div>	
+			</div>
+		</volist>
+	</div>
+</div>
+<div class="container">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				<span class="glyphicon glyphicon-th-list"></span> 师资团队
+			</h4>
+			<p>{:C('TEAM')}</p>
+		</div>
+	</div>
+	<div class="row classroom">
+		<volist name="classrooms" id="classroom">
+			<div class="col-md-4 clsrm">
+				<img class="img-thumbnail" width="100%" src="{:C('UPLOADS')}{$classroom[img]}" alt="">
+				<p>{$classroom[name]}</p>
+			</div>
+		</volist>
+	</div>
+</div>
+<script>
+	$('.clsrm>img').hover(
+		function(){
+			$(this).next().stop().slideDown(1000);
+		},
+		function(){
+			$(this).next().stop().slideUp(1000);
+		}
+	)
+
+</script>
+</block>
+

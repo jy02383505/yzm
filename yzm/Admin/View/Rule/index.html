@@ -1,0 +1,32 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">规则列表</block>
+<block name="style"></block>
+<block name="content">
+	<div class="panel panel-info">
+		<div class="panel-heading"><h4>规则列表</h4></div>
+		<div class="panel-body">
+			<table class="table table-hover table-striped table-bordered">
+				<tr>
+					<th>编号</th>
+					<th>规则</th>
+					<th>规则名称</th>
+					<th>所属模块</th>
+					<th>修改</a></th>
+					<th>删除</a></th>
+				</tr>
+				<volist name="rules" id="rule">
+					<tr>
+						<td>{$rule[id]}</td>
+						<td>{$rule[name]}</td>
+						<td>{$rule[title]}</td>
+						<td>{$rule[module_name]}</td>
+						<td><a href="{:U('edit')}/id/{$rule[id]}">修改</a></td>
+						<td><a href="{:U('delete')}/id/{$rule[id]}">删除</a></td>
+					</tr>
+				</volist>
+			</table>
+			<div class="text-center">{$pagination}</div>
+		</div>
+	</div>
+</block>
+

@@ -1,0 +1,33 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增模块</block>
+<block name="style">
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading"><h4>新增模块</h4></div>
+	<div class="panel panel-body">
+		<form action="" method="post">
+			<div class="form-group">
+				<label>模块名称</label>
+				<input value="{$row[name]}" type="text" name="name" class="form-control" tabindex="1">
+			</div>
+			<div class="form-group">
+				<label>控制器名称</label>
+				<input value="{$row[mname]}" type="text" name="mname" class="form-control" tabindex="2">
+			</div>
+
+			<div class="form-group">
+				<label>是否可见</label>
+				<label><input {$row[is_display]?"checked":""} type="radio" name="is_display" value="1" tabindex="2"> 是</label>
+				<label><input {$row[is_display]?"":"checked"} type="radio" name="is_display" value="0" tabindex="3"> 否</label>
+			</div>
+
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+</block>
+

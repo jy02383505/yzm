@@ -1,0 +1,55 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-{$row[title]}</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/css/news.css">
+</block>
+<block name="carousel"></block>
+<block name="content">
+<div class="container news_container">
+	<ol class="breadcrumb">
+		<li><a href="{:U('Index/index')}">首页</a></li>
+		<li><a href="{:U('index')}">新闻中心</a></li>
+		<li class="active">{$row[title]}</li>
+	</ol>
+	<div class="news_title">
+		<h2 class="n_title">{$row[title]}</h2>
+		<span class="d_con_det">
+			浏览：{$row[browse_num]} | 作者：{$row[author]} | 发表时间：{$row[news_date]}
+		</span>
+	</div>
+	<!-- 上分页 -->
+	<ul class="pages_up">
+		<div class="page_direct">
+			<div class="page_btn">
+				<php>
+					$prev = $row[id] - 1;
+					$next = $row[id] + 1;
+				</php>
+					<!-- todo:id如果不连续呢？ -->
+				<a href='{:U("info", "id=$prev")}' class="page_prev" title="上一篇"><</a>	
+				<a href="{:U('index')}" class="page_center" title="返回列表">
+					<span class="glyphicon glyphicon-th"></span>
+				</a>
+				<a href='{:U("info", "id=$next")}' class="page_next" title="下一篇">></a>
+			</div>
+		</div>
+	</ul>
+
+	<!-- 咨询内容 -->
+	<div>{$row[info]}</div>
+
+	<!-- 下分页 -->
+	<ul class="pages_down">
+		<div class="page_direct">
+			<div class="page_btn">
+				<a href='{:U("info", "id=$prev")}' class="page_prev" title="上一篇"><</a>	
+				<a href="{:U('index')}" class="page_center" title="返回列表">
+					<span class="glyphicon glyphicon-th"></span>
+				</a>
+				<a href='{:U("info", "id=$next")}' class="page_next" title="下一篇">></a>
+			</div>
+		</div>
+	</ul>
+</div>
+</block>
+

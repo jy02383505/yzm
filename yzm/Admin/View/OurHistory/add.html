@@ -1,0 +1,83 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">新增新闻资讯</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+	<link rel="stylesheet" href="__PUBLIC__/jquery-ui/jquery.datetimepicker.css">
+	<script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+	<script src="__PUBLIC__/jquery-ui/jquery.datetimepicker.full.js"></script>
+	<style>
+		.newsInfo{
+			position: relative;
+			z-index: 0;
+		}
+	</style>
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>新增新闻资讯</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="" method="post">
+			<div class="form-group">
+				<label>新闻标题</label>
+				<input type="text" name="title" tabindex="1" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>新闻简述</label>
+				<input type="text" name="brief_info" tabindex="2" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>图片上传</label>
+				<div id="imgs"></div>
+				<input type="file" name="img" id="file_upload" class="form-control" multiple="true" tabindex="3">
+				<input type="hidden" name="img" id="img">
+			</div>
+			<div class="form-group">
+				<label>新闻发布日期</label>
+				<input type="text" name="news_date" tabindex="4" id="news_date" placeholder="请选择日期" class="datepicker_input">
+			</div>
+			<div class="newsInfo">
+				<label>新闻详情</label>
+				<script name="info" id="infoEditor" type="text/plain" ></script>
+			</div>
+			<div class="form-group">
+				<input type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js">
+</script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.js"></script>
+<script type="text/javascript" charset="utf-8" src="__PUBLIC__/ueditor/lang/zh-cn/zh-cn.js"></script>
+<!-- 以上三行扔到最上面style里面就无法加载，也是醉了！ -->
+<script>
+// datepicker开启
+$('#news_date').datetimepicker({
+	lang: "zh-cn",
+	format: "Y-m-d H:i:s",
+});
+	
+// ueditor
+var ue = UE.getEditor('infoEditor');
+</script>
+<script>
+	// uploadify
+	img = '';
+	$('#file_upload').uploadify({
+		'swf': '__PUBLIC__/uploadify/uploadify.swf',
+		'uploader': '{:U("Allow/upload")}',
+		'buttonText': '缩略图上传',
+		onUploadSuccess: function(file, data, response){
+			img += "<img width='300px' src='/yzm/Uploads/" + data + "'>";
+			$('#imgs').html(img);
+			$('#img').val(data.substr(2));
+		}
+	});
+
+</script>
+</block>
+

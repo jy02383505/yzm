@@ -1,0 +1,80 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-作品展示</block>
+<block name="css_js">
+<link rel="stylesheet" href="__PUBLIC__/css/production.css">
+</block>
+<block name="content">
+<div class="container" style="margin-top:10px;">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				<span class="glyphicon glyphicon-th-list"></span> 学员作品
+			</h4>
+			<p>{:C('PRODUCTION')}</p>
+		</div>
+	</div>
+	<div class="col-md-12" style="margin-bottom:30px">
+		<ul class="production_title">
+			<php>
+				if(!isset($_GET[q_t])){
+					$c_all = "production_active";
+				}else{
+					$c_all = "";
+				}
+			</php>
+			<li class="{$c_all}"><a href='{:U("index")}'>全部</a></li>
+			<volist name="q_type" id="q_t">
+				<php>	
+					if($q_t == 0){
+						$t = "PHP基础项目";
+						$c = $q_t == $_GET[q_t]? "production_active": "";
+					}elseif($q_t == 1){
+						$t = "PHP高级项目";
+						$c = $q_t == $_GET[q_t]? "production_active": "";
+					}elseif($q_t == 2){
+						$t = "WEB前端项目";
+						$c = $q_t == $_GET[q_t]? "production_active": "";
+					}elseif($q_t == 3){
+						$t = "微信项目";
+						$c = $q_t == $_GET[q_t]? "production_active": "";
+					}
+				</php>
+				<li class="{$c}"><a href='{:U("", "q_t=$q_t")}'>{$t}</a></li>
+			</volist>
+		</ul>
+	</div>
+	<div class="row production">
+		<volist name="production" id="product">
+			<div class="col-md-4 product" style="height:200px;">
+				<a href='{:U("info", "id=$product[id]")}'>
+					<php>
+						$img = explode(',', $product[imgs])[0];
+					</php>
+					<img class="img-thumbnail img-responsive img-rounded" width="100%" src="{:C('UPLOADS')}{$img}" alt="">
+				</a>
+				<div class="student_body">
+					<div class="student_left">
+						<img src="{:C('UPLOADS')}{$product[student_img]}" alt="{$product[student_name]}" width="100px" style="height:100px" class="img-responsive img-circle">
+					</div>
+					<div class="student_right">
+						<p>{$product[student_name]}({$product[course_name]})</p>
+						<p>{$product[name]}</p>
+					</div>
+				</div>
+			</div>
+		</volist>
+	</div>
+</div>
+<script>
+	// 鼠标飘过的样式控制
+	$('.product').hover(
+		function(){
+			$(this).children('.student_body').stop().slideDown(1000);
+		},
+		function(){
+			$(this).children('.student_body').stop().slideUp(1000);
+		}
+	);
+</script>
+</block>
+

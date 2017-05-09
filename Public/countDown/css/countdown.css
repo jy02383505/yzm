@@ -1,0 +1,42 @@
+*{margin:0;padding:0;list-style:none;}
+#hero_outer {
+	position:relative;
+	width:100%;
+	height:40px;
+}
+#hero_outer .hero {
+	width:100%;
+	height:40px;
+	position:absolute;
+	background-position:center center;
+	background-repeat:no-repeat;
+}
+/*main*/
+.flip-counter{
+	position:relative;
+	height:40px!important;
+}
+.flip-counter ul.cd {
+	float:left;
+	height:40px;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.flip-counter li {
+	background:url('../images/digits_small.png') 0 0 no-repeat;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (-min-resolution: 2dppx) {
+	.flip-counter li {
+		background-image:url('../images/digits_small.png');
+		background-size:120px 400px;
+	}
+}
+.flip-counter li.date_separate {
+	width:11px;
+	height:40px;
+	background:none;
+}
+.flip-counter li.t {background-position:0 0;width:30px;height:20px}
+.flip-counter li.b {background-position:0 0;width:30px;height:20px}
+/*download by www.sucaijiayuan.com*/

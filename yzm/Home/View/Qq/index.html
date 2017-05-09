@@ -1,0 +1,63 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦-师资团队</block>
+<block name="css_js">
+</block>
+<block name="content">
+<div class="container" style="margin-top:20px;">
+	<div class="panel panel-primary">
+		<div class="panel-heading">
+			<h4>
+				<span class="glyphicon glyphicon-th-list"></span> 云知梦软件开发群
+			</h4>
+			<p>{:C('QQ')}</p>
+		</div>
+	</div>
+	<div class="qgroup">
+		<div class="row text-center qq">
+			<volist name="rows" id="row">
+				<div class="col-md-4 qimgs">
+					<php>
+						if($row[tag] == "最受欢迎"){
+							$tag = "tag_welcome";
+						}elseif($row[tag] == "小编推荐"){
+							$tag = "tag_recommand";
+						}else{
+							$tag = "";
+						}
+					</php>
+					<div class={$tag}></div>
+					<div class="row text-center">
+						<div class="col-md-4">
+							<img height="100%" width="95%" src="__PUBLIC__/images/yzm.jpg" class="img-responsive img-circle img-thumbnail" alt="">
+						</div>
+						<div class="col-md-8">
+							<div class="caption">
+								<h4 class="text-primary">{$row[name]}</h4>
+								<p class="lead">
+									<span class="label label-success" style="width:140px;display:inline-block;height:30px;line-height:26px;">
+										<span class="glyphicon glyphicon-user"></span>
+										{$row[how_many]}人/{$row[status]?"满员":"未满"}
+									</span>
+								</p>
+								<p class="lead">
+									<span class="label label-danger" style="width:140px;display:inline-block;height:30px;line-height:26px;">
+										<span class="glyphicon glyphicon-ok-sign"></span>
+										{$row[qq]}
+									</span>
+								</p>
+								<p class="lead">
+									<span class="label label-primary">
+										<span class="glyphicon glyphicon-log-in"></span>
+										加入该群
+									</span>
+								</p>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</volist>
+		</div>
+	</div>
+</div>
+</block>
+

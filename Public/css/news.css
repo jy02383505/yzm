@@ -1,0 +1,19 @@
+.pages_up{
+	position: absolute;
+	right: 135px;
+	top: 190px;
+}
+.pages_down{
+	position: relative;
+}
+.page_btn{
+	text-align: center;
+}
+.page_btn a{
+	background-color: #000;
+	margin: 15px 10px;
+	font-size: 22px;
+	padding: 7px 10px;
+	color: #fff;
+	text-decoration: none;
+}

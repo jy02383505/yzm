@@ -1,0 +1,43 @@
+<extend name="Public/templates/admin/base.html" />
+<block name="title">技术交流</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/uploadify/uploadify.css">
+	<script src="__PUBLIC__/uploadify/jquery.uploadify.min.js"></script>
+</block>
+<block name="content">
+<div class="panel panel-info">
+	<div class="panel-heading">
+		<div class="panel-title"><h4>技术交流</h4></div>
+	</div>
+	<div class="panel-body">
+		<form action="" enctype="multipart/form-data" method="post">
+			<div class="form-group">
+				<label>QQ群名称</label>
+				<input type="text" name="name" tabindex="1" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>群号</label>
+				<input type="text" name="qq" tabindex="2" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>群人数规模</label>
+				<input type="text" name="how_many" tabindex="3" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>标签</label>
+				<input placeholder="如：最受欢迎 or 小编推荐" type="text" name="tag" tabindex="4" class="form-control">
+			</div>
+			<div class="form-group">
+				<label>是否满员</label>
+				<label><input class="radio-inline" type="radio" name="status" value="1" tabindex="5"> <code>满员</code></label>
+				<label><input class="radio-inline" type="radio" name="status" value="0" tabindex="6"> <code>未满</code></label>
+			</div>
+			<div class="form-group">
+				<input tabindex="999" type="submit" class="btn btn-primary">
+				<input type="reset" value="重置" class="btn btn-danger">
+			</div>
+		</form>	
+	</div>
+</div>
+</block>
+

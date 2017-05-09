@@ -1,0 +1,37 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">幻灯片列表</block>
+<block name="css_js">
+<link rel="stylesheet" href="__PUBLIC__/css/course.css">
+</block>
+<block name="content">
+<div class="container">
+	<volist name="rows" id="row">
+		<div class="course_block">
+			<div class="course_top">
+				<h4><span>云知梦</span>{$row[name]}<span>课程</span></h4>
+				<p>{$row[info]}</p>
+			</div>
+			<volist name="row[next]" id="course_row" key="k">
+				<div class="course_body">
+					<li>
+						<p class="l">课程<br>{$k}阶段</p>
+						<a class="l">{$course_row[name]}</a>
+						<div class="clear"></div>
+						<span class="course_body_span">
+							<ul class="l">
+								<li><b>学习内容：</b>{$course_row[content]}</li>
+								<li><b>学习目标：</b>{$course_row[target]}</li>
+								<li><b>学习成果：</b>{$course_row[achievement]}</li>
+								<li><a href="{:U('Download/index')}" class="btn btn-danger" target="_blank">学习课程</a></li>
+							</ul>
+							<img src="{:C('UPLOADS')}{$course_row[img]}" alt="" width="530px" height="208px" style="margin-left:18px">
+							<span class="clear"></span>
+						</span>
+					</li>
+				</div>
+			</volist>
+		</div>
+	</volist>
+</div>
+</block>
+

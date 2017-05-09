@@ -1,0 +1,60 @@
+<extend name="Public/templates/home/base.html" />
+<block name="title">云知梦- 太原PHP培训|山西PHP培训|PHP培训|PHP视频|PHP学习|太原PHP开发|山西PHP开发</block>
+<block name="css_js">
+	<link rel="stylesheet" href="__PUBLIC__/countDown/css/countdown.css">
+	<script src="__PUBLIC__/countDown/js/countdown.js"></script>
+	<script src="__PUBLIC__/countDown/js/flip_counter.js"></script>
+	<script src="__PUBLIC__/js/home.js"></script>
+</block>
+<block name="content">
+	<!-- 开班信息 -->
+	<div class="container courseRows">
+		<volist name="coursePlans" id="coursePlan">
+			<div class="row">
+				<div class="col-md-2 courseName">{$coursePlan[name]}</div>
+				<div class="col-md-2 courseDate">{$coursePlan[course_date]}</div>
+				<div class="col-md-2 courseStatus">
+					<if condition="$coursePlan[status] eq 0">
+						火热报名<span class='glyphicon glyphicon-fire fire'></span>
+					<else/>
+						盛大开班<span class="glyphicon glyphicon-flag flag"></span>
+					</if>
+				</div>
+				<div class="col-md-4 courseImg">
+					<if condition="$coursePlan[status] eq 0">
+						<div id="hero_outer">
+							<div class="hero">
+							<div id="flip-counter" class="flip-counter" data-date="{$coursePlan[course_date]}"></div>
+							</div>
+						</div>
+					<else/>
+						<img src="__PUBLIC__/images/ttt.gif">
+					</if>
+				</div>
+				<div class="col-md-2 courseUrl">
+					<if condition="$coursePlan[status] eq 0">
+						<a href="">在线报名</a>
+					<else/>
+						<a href="">了解更多</a>
+					</if>
+				</div>
+			</div>
+		</volist>
+		<div class="text-center">
+			<a href="{:U('CoursePlan/index')}" class="btn btn-lg btn-warning">更多开班信息>></a>
+		</div>
+	</div>
+
+<script>
+$('.clsrm>img').hover(
+	function(){
+		$(this).next().stop().slideDown(1000);
+	},
+	function(){
+		$(this).next().stop().slideUp(1000);
+	}
+)
+
+</script>
+</block>
+
